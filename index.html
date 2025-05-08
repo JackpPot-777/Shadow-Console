@@ -2,16 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Shadow Console</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="console-container">
-    <h1>Welcome to Shadow Console</h1>
-    <p>Play games, browse, and explore with speed and privacy.</p>
-    <button onclick="startApp()">Launch Console</button>
+  <!-- Password Gate -->
+  <div id="password-screen">
+    <h2>Enter Password to Access Shadow Console</h2>
+    <input type="password" id="password-input" placeholder="Password...">
+    <button onclick="checkPassword()">Enter</button>
+    <p id="error-message"></p>
   </div>
+
+  <!-- Main Shadow Console -->
+  <div id="main-site" style="display:none;">
+    <h1>Welcome to Shadow Console</h1>
+    
+    <!-- Features Section -->
+    <div class="features">
+      <h2>Main Features</h2>
+      <ul>
+        <li>Dark theme by default, but users can change it.</li>
+        <li>ShadowGPT: Built-in AI powered by ChatGPT.</li>
+        <li>Google access + Search bypass.</li>
+        <li>Custom link generator.</li>
+        <li>Save data system across link changes.</li>
+        <li>User account system (with history + tiered access).</li>
+        <li>Dev Tools for you only (block access, update links, view user activity).</li>
+        <li>Backup system if site gets blocked.</li>
+        <li>Multiple domains or mirrors for reliability.</li>
+        <li>Password-based tier upgrades and reward codes.</li>
+        <li>Music player (e.g., YouTube or MP3 link).</li>
+        <li>Intro animation/cutscene (e.g., fighting avatars).</li>
+        <li>Fast load speed & mobile support.</li>
+        <li>Games: GBA games, Bros games (e.g., BasketBros), PC-style games.</li>
+        <li>TV/anime/movie section.</li>
+        <li>Built-in tutorial section to guide users.</li>
+        <li>Roblox and Fortnite integration support (link/launch).</li>
+        <li>Fake browser interface to disguise the site.</li>
+        <li>Link protection (so people don’t share links too freely).</li>
+        <li>GoGuardian counter (message popup, session evasion, or domain hop).</li>
+        <li>Multiple currencies for payment (snacks, yen, school currency, etc.).</li>
+        <li>Admin-only data wipe and control.</li>
+      </ul>
+    </div>
+
+    <!-- Links Section -->
+    <div class="links">
+      <h2>Quick Access</h2>
+      <ul>
+        <li><a href="https://www.google.com" target="_blank">Search on Google</a></li>
+        <li><a href="https://youtube.com" target="_blank">Watch Videos</a></li>
+        <li><a href="https://example.com/anime" target="_blank">Watch Anime</a></li>
+        <li><a href="https://example.com/games" target="_blank">Play Games</a></li>
+        <li><a href="https://chat.openai.com" target="_blank">Use ShadowGPT (AI)</a></li>
+      </ul>
+      <p>Optional Music: <a href="https://example.com/music.mp3" target="_blank">Play Theme Song</a></p>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
