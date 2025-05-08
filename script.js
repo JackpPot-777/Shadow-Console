@@ -1,4 +1,12 @@
-function startApp() {
-  alert("Shadow Console loading... (actual features coming soon!)");
-  // You can expand this with game launcher, search bypass, or proxy launch code
+function checkPassword() {
+  const correctPassword = "JoyBoy";
+  const input = document.getElementById("password-input").value;
+  const error = document.getElementById("error-message");
+
+  if (input === correctPassword) {
+    document.getElementById("password-screen").style.display = "none";
+    document.getElementById("main-site").style.display = "block";
+  } else {
+    error.textContent = "Incorrect password.";
+  }
 }
